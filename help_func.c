@@ -5,7 +5,6 @@
  *
  * Return: 1
  */
-
 int _print_string(va_list ap)
 {
 	int i = 0;
@@ -18,13 +17,13 @@ int _print_string(va_list ap)
 		_putchar(s[i]);
 	return (i);
 }
+
 /**
  * _print_int - Prints an integer
  * @ap: Action pointer
  *
  * Return: Number of digits
  */
-
 int _print_int(va_list ap)
 {
 	int i;

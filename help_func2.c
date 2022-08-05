@@ -5,7 +5,6 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
@@ -21,6 +20,7 @@ int _print_char(va_list ap)
 	_putchar(va_arg(ap, int));
 	return (1);
 }
+
 /**
  * _print_percent - Prints a percent
  * @ap: Action pointer
@@ -62,3 +62,28 @@ int _print_reverse(va_list ap)
  *
  * Return: Length of string
  */
+int _print_rot13(va_list ap)
+{
+	int i, j;
+	char alphabet[] = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+	char rAlphbet[] = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
+	char *s;
+
+	s = va_arg(ap, char *);
+	if (!s)
+		s = "(null)";
+	for (i = 0; s[i]; ++i)
+	{
+		for (j = 0; alphabet[j]; ++j)
+		{
+			if (alphabet[j] == s[i])
+			{
+				_putchar(rAlphbet[j]);
+				break;
+			}
+		}
+		if (!alphabet[j])
+			_putchar(s[i]);
+	}
+	return (i);
+}
