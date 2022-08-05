@@ -8,6 +8,7 @@ int _putchar(char c);
 int _print_char(va_list ap);
 int _print_percent(va_list ap __attribute__((unused)));
 char *convert(unsigned int num, int base);
+int _print_reverse(va_list ap);
 int _print_int(va_list ap);
 
 #endif /* _MAIN_H_ */

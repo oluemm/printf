@@ -32,27 +32,33 @@ int _print_percent(va_list ap __attribute__((unused)))
 	_putchar('%');
 	return (1);
 }
+
 /**
- * convert - function that converts our int to hex, octal, or binary
- * @num: the number passed into the function
- * @base: the base to convert to
+ * _print_reverse - Prints reversed string
+ * @ap: Action pointer
  *
- * Return: the convertednumber of a certain base
+ * Return: Number of digits
  */
-char *convert(unsigned int num, int base)
+int _print_reverse(va_list ap)
 {
-	const char Representation[] = "0123456789ABCDEF";
-	static char buffer[50];
-	char *ptr;
+	int len = 0;
+	int i;
+	char *s;
 
-	ptr = &buffer[49];
-	*ptr = '\0';
-
-	while (num != 0)
-	{
-		*--ptr = Representation[num % base];
-		num /= base;
-	}
-
-	return (ptr);
+	s = va_arg(ap, char *);
+	if (!s)
+		s = "(null)";
+	while (s[len])
+		++len;
+	i = len - 1;
+	while (i >= 0)
+		_putchar(s[i--]);
+	return (len);
 }
+
+/**
+ * _print_rot13 - Encode a string using rot13
+ * @ap: Action pointer
+ *
+ * Return: Length of string
+ */
