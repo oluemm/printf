@@ -1,1 +1,1 @@
-#####Testing out collaborative programming with [owoyomi20](@owoyomi20)
+#####Testing out collaborative programming with [owoyomi20](https://github.com/owoyomi20)
