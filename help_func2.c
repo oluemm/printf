@@ -21,3 +21,14 @@ int _print_char(va_list ap)
 	_putchar(va_arg(ap, int));
 	return (1);
 }
+/**
+ * _print_percent - Prints a percent
+ * @ap: Action pointer
+ *
+ * Return: 1
+ */
+int _print_percent(va_list ap __attribute__((unused)))
+{
+	_putchar('%');
+	return (1);
+}
