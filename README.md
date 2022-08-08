@@ -117,6 +117,8 @@ Unknown:[
 ]21[:neL]
 Unknown:[%r]
 ```
+### About
+All files were created and compiled on `Ubuntu 22.04 LTS` using `GCC 11.2.0`
 
 ## Collaborative Authors
 
