@@ -87,7 +87,7 @@ int main(void)
 
 ### Output Check
 Your output should after compiling and running the program should look something like...
-```
+``` 
 Let's try to printf a simple sentence.
 Let's try to printf a simple sentence.
 Length:[39, 39]
@@ -124,4 +124,4 @@ All files were created and compiled on `Ubuntu 22.04 LTS` using `GCC 11.2.0`
 
 ## Collaborative Authors
 
-### 17 [Emmanuel Fasogba](https://github.com/fashemma007) & 16[Owoyomi Taiwo](https://github.com/owoyomi20)
+### 18 [Emmanuel Fasogba](https://github.com/fashemma007) & 18 [Owoyomi Taiwo](https://github.com/owoyomi20)
