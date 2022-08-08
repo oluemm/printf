@@ -1,11 +1,23 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdint.h>
+
+/**
+ * struct print - print
+ * @parameter: The operator
+ * @f: The function associated
+ */
+typedef struct printType
+{
+	char *parameter;
+	int (*f)(va_list ap);
+} print_type;
 
 int _printf(const char *format, ...);
 int _print_string(va_list ap);
@@ -21,5 +33,6 @@ int _print_octal(va_list ap);
 int _print_hex_u(va_list ap);
 int _print_binary(va_list ap);
 int _print_hex_l(va_list ap);
+int get_func(const char *format, print_type argument[], va_list ap)
 
 #endif /* _MAIN_H_ */
