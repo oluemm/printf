@@ -120,6 +120,8 @@ Unknown:[%r]
 ### About
 All files were created and compiled on `Ubuntu 22.04 LTS` using `GCC 11.2.0`
 
+
+
 ## Collaborative Authors
 
-### 17 [Emmanuel Fasogba](https://github.com/fashemma007) & 15[Owoyomi Taiwo](https://github.com/owoyomi20)
+### 17 [Emmanuel Fasogba](https://github.com/fashemma007) & 16[Owoyomi Taiwo](https://github.com/owoyomi20)
