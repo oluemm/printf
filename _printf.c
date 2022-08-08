@@ -16,13 +16,14 @@ int _printf(const char *format, ...)
 		{"%", _percent},
 		{"d", _int},
 		{"i", _int},
-		{"v", _reverse},
+		{"r", _reverse},
 		{"R", _rot13},
 		{"b", _binary},
 		{"u", _unsigned},
 		{"o", _octal},
 		{"x", _hex_l},
 		{"X", _hex_u},
+		{"p", _address},
 		{NULL, NULL}};
 	va_list ap;
 

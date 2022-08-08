@@ -20,7 +20,7 @@ Function name | Description | Format Specifier
 `_string` | Prints out a string of characters | `%s`
 `_percent` | Prints out a % | `%%`
 `_int` | Prints out an integer in base 10| `%d` & `%i`
-`_reverse` | Prints out the string in reverse | `v`
+`_reverse` | Prints out the string in reverse | `r`
 `_rot13` | Converts the string into Rot13 | `R`
 `_binary` | Prints out the binary form of the integer | `b`
 `_unsigned` | Prints out an unsigned integer | `u`
@@ -34,7 +34,7 @@ This code can be compiled using
 ```
 $ gcc -Wall -Werror -Wextra -pedantic *.c
 ```
-OR (if you want to test for unknown format specifiers)
+OR _if you want to test for unknown format specifiers_
 
 ```
 $ gcc -Wall -Werror -Wextra -pedantic -Wno-format *.c
