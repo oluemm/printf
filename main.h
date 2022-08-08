@@ -16,5 +16,6 @@ char *convert(unsigned int num, int base);
 int _print_rot13(va_list ap);
 int _print_reverse(va_list ap);
 int _print_int(va_list ap);
+int _print_unsigned(va_list ap);
 
 #endif /* _MAIN_H_ */
