@@ -16,12 +16,17 @@ The _printf program will replicate the effects of the listed % format specifiers
 
 Function name | Description | Format Specifier
 --- | --- | ---
-`_print_char` | Prints a single character | `%c`
-`_print_string` | Prints a string of characters | `%s`
-`_print_percent` | Prints a % | `%%`
-`_print_int` | Prints an integer in base 10| `%d` & `%i`
-`_print_reverse` | Prints the string in reverse | `r`
-`_print_rot13` | Converts the string
+`_char` | Prints out a single character | `%c`
+`_string` | Prints out a string of characters | `%s`
+`_percent` | Prints out a % | `%%`
+`_int` | Prints out an integer in base 10| `%d` & `%i`
+`_reverse` | Prints out the string in reverse | `v`
+`_rot13` | Converts the string into Rot13 | `R`
+`_binary` | Prints out the binary form of the integer | `b`
+`_unsigned` | Prints out an unsigned integer | `u`
+`_octal` | Prints out and octal number | `o`
+`_hex_l` | Prints out the lower case hexidecimal number | `x`
+`_hex_u` | Prints out the upper case hexidecimal number | `X`
 
 ### Compilation
 
@@ -58,28 +63,29 @@ int main(void)
     len2 = printf("Let's try to printf a simple sentence.\n");
     ui = (unsigned int)INT_MAX + 1024;
     addr = (void *)0x7ffe637541f0;
-    _printf("Length:[%d, %i]\n", len, len);
-    printf("Length:[%d, %i]\n", len2, len2);
-    _printf("Negative:[%d]\n", -762534);
-    printf("Negative:[%d]\n", -762534);
-    _printf("Unsigned:[%u]\n", ui);
-    printf("Unsigned:[%u]\n", ui);
-    _printf("Unsigned octal:[%o]\n", ui);
-    printf("Unsigned octal:[%o]\n", ui);
-    _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-    printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-    _printf("Character:[%c]\n", 'H');
-    printf("Character:[%c]\n", 'H');
-    _printf("String:[%s]\n", "I am a string !");
-    printf("String:[%s]\n", "I am a string !");
-    _printf("Address:[%p]\n", addr);
-    printf("Address:[%p]\n", addr);
-    len = _printf("Percent:[%%]\n");
-    len2 = printf("Percent:[%%]\n");
-    _printf("Len:[%d]\n", len);
-    printf("Len:[%d]\n", len2);
-    _printf("Unknown:[%r]\n");
-    printf("Unknown:[%r]\n");
+	_printf("Length:[%d, %i]\n", len, len);
+	printf("Length:[%d, %i]\n", len2, len2);
+	_printf("Negative:[%d]\n", -762534);
+	printf("Negative:[%d]\n", -762534);
+	_printf("Unsigned:[%u]\n", ui);
+	printf("Unsigned:[%u]\n", ui);
+	_printf("Unsigned octal:[%o]\n", ui);
+	printf("Unsigned octal:[%o]\n", ui);
+	_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+	printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+	_printf("Character:[%c]\n", 'H');
+	printf("Character:[%c]\n", 'H');
+	_printf("String:[%s]\n", "I am a string !");
+	printf("String:[%s]\n", "I am a string !");
+	_printf("Address:[%p]\n", addr);
+	printf("Address:[%p]\n", addr);
+	len = _printf("Percent:[%%]\n");
+	len2 = printf("Percent:[%%]\n");
+	_printf("Len:[%d]\n", len);
+	printf("Len:[%d]\n", len2);
+	_printf("Testing Reversals:[%v]\n", "Emmanuel");
+	_printf("Unknown:[%r]\n");
+	printf("Unknown:[%r]\n");
     return (0);
 }
 ```
@@ -104,18 +110,15 @@ Character:[H]
 Character:[H]
 String:[I am a string !]
 String:[I am a string !]
-Address:[%p] '\t' WiP
+Address:[%p]
 Address:[0x7ffe637541f0]
 Percent:[%]
 Percent:[%]
 Len:[12]
 Len:[12]
-Unknown:[ '\t' WiP
-]FF300008 ,ff300 '\t' WiP
-]0f145736eff '\t' WiP
-]% '\t' WiP
-]21[:neL] '\t' WiP
-Unknown:[%r] '\t' WiP
+Testing Reversals:[leunammE]
+Unknown:[%r]
+Unknown:[%r]
 ```
 ### About
 All files were created and compiled on `Ubuntu 22.04 LTS` using `GCC 11.2.0`

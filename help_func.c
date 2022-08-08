@@ -25,12 +25,12 @@ char *convert(unsigned int num, int base)
 }
 
 /**
- * _print_string - function that prints a string
+ * _string - function that prints a string
  * @ap: the string
  *
  * Return: 1
  */
-int _print_string(va_list ap)
+int _string(va_list ap)
 {
 	int i = 0;
 	char *s;
@@ -44,12 +44,12 @@ int _print_string(va_list ap)
 }
 
 /**
- * _print_int - Prints an integer
+ * _int - Prints an integer
  * @ap: Action pointer
  *
  * Return: Number of digits
  */
-int _print_int(va_list ap)
+int _int(va_list ap)
 {
 	int i;
 	int count = 0;
@@ -77,13 +77,13 @@ int _print_int(va_list ap)
 }
 
 /**
- * _print_unsigned - Prints an unsigned integer
+ * _unsigned - Prints an unsigned integer
  * @ap: Action pointer
  *
  * Return: Number of digits
  */
 
-int _print_unsigned(va_list ap)
+int _unsigned(va_list ap)
 {
 	int i;
 	int count = 0;
@@ -107,13 +107,13 @@ int _print_unsigned(va_list ap)
 }
 
 /**
- * _print_octal - Prints an octal number
+ * _octal - Prints an octal number
  * @ap: Action pointer
  *
  * Return: Number of digits
  */
 
-int _print_octal(va_list ap)
+int _octal(va_list ap)
 {
 	int i;
 	unsigned int n;

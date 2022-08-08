@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * _print_binary - function that prints a binary number from int
+ * _binary - function that prints a binary number from int
  * @ap: the action pointer
  *
  * Return: the binary number
  */
 
-int _print_binary(va_list ap)
+int _binary(va_list ap)
 {
 	int i;
 	unsigned int n;
@@ -24,13 +24,13 @@ int _print_binary(va_list ap)
 }
 
 /**
- * _print_hex_u - function that prints a hex number from int
+ * _hex_u - function that prints a hex number from int
  * @ap: the action pointer
  *
  * Return: the count
  */
 
-int _print_hex_u(va_list ap)
+int _hex_u(va_list ap)
 {
 	int i;
 	unsigned int n;
@@ -48,12 +48,12 @@ int _print_hex_u(va_list ap)
 }
 
 /**
- * _print_hex_l - function that prints a hex number from int
+ * _hex_l - function that prints a hex number from int
  * @ap: the action pointer
  *
  * Return: the count
  */
-int _print_hex_l(va_list ap)
+int _hex_l(va_list ap)
 {
 	int i;
 	unsigned int n;
