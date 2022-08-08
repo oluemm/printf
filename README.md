@@ -84,10 +84,10 @@ int main(void)
 }
 ```
 
-```
+
 ### Output Check
 Your output should after compiling and running the program should look something like...
-
+```
 Let's try to printf a simple sentence.
 Let's try to printf a simple sentence.
 Length:[39, 39]
