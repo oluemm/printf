@@ -104,18 +104,18 @@ Character:[H]
 Character:[H]
 String:[I am a string !]
 String:[I am a string !]
-Address:[%p]
+Address:[%p] '\t' WiP
 Address:[0x7ffe637541f0]
 Percent:[%]
 Percent:[%]
 Len:[12]
 Len:[12]
-Unknown:[
-]FF300008 ,ff300
-]0f145736eff
-]%
-]21[:neL]
-Unknown:[%r]
+Unknown:[ '\t' WiP
+]FF300008 ,ff300 '\t' WiP
+]0f145736eff '\t' WiP
+]% '\t' WiP
+]21[:neL] '\t' WiP
+Unknown:[%r] '\t' WiP
 ```
 ### About
 All files were created and compiled on `Ubuntu 22.04 LTS` using `GCC 11.2.0`
@@ -124,4 +124,4 @@ All files were created and compiled on `Ubuntu 22.04 LTS` using `GCC 11.2.0`
 
 ## Collaborative Authors
 
-### 18 [Emmanuel Fasogba](https://github.com/fashemma007) & 18 [Owoyomi Taiwo](https://github.com/owoyomi20)
+### 18 [Emmanuel Fasogba](https://github.com/fashemma007) & 19 [Owoyomi Taiwo](https://github.com/owoyomi20)
