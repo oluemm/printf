@@ -33,6 +33,6 @@ int _print_octal(va_list ap);
 int _print_hex_u(va_list ap);
 int _print_binary(va_list ap);
 int _print_hex_l(va_list ap);
-int get_func(const char *format, print_type argument[], va_list ap)
+int get_func(const char *format, print_type argument[], va_list ap);
 
 #endif /* _MAIN_H_ */
